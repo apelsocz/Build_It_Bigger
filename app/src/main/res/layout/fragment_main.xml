@@ -26,6 +26,11 @@
             android:layout_height="wrap_content"
             android:onClick="launchJokeActivity"
             android:text="@string/button_text_android_lib"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="launchGCEJokeActivity"
+            android:text="@string/button_text_android_gce"/>
     </LinearLayout>
 
     <com.google.android.gms.ads.AdView

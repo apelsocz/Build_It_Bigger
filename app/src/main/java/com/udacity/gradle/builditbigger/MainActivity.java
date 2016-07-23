@@ -1,7 +1,9 @@
 package com.udacity.gradle.builditbigger;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.util.Pair;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -53,5 +55,9 @@ public class MainActivity extends ActionBarActivity {
         JokeSmith joke = new JokeSmith();
         intent.putExtra(JokeActivity.JOKE_KEY, joke.getJoke());
         startActivity(intent);
+    }
+
+    public void launchGCEJokeActivity(View view) {
+        new EndpointsAsyncTask().execute(new Pair<Context, String>(this, "Pelsoczi"));
     }
 }
