@@ -1,0 +1,8 @@
+apply plugin: 'java'
+
+// Java Library usable on Android (JDK 7)
+sourceCompatibility = 1.7
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
