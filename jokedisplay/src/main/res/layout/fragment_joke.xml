@@ -9,6 +9,8 @@
         android:id="@+id/joke_textview"
         android:text="@string/missing_joke"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textAppearance="@android:style/TextAppearance.Large"/>
 
 </RelativeLayout>

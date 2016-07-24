@@ -28,7 +28,7 @@ public class MyEndpoint {
     public MyBean tellJoke() {
         MyBean response = new MyBean();
         JokeSmith joke = new JokeSmith();
-        response.setData("Here's a joke - " + joke.getJoke());
+        response.setData(joke.getJoke());
 
         return response;
     }
